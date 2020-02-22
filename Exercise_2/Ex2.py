@@ -4,7 +4,7 @@ def main():
     file=open(tmp,"r")
     words = file.read().split() #split the file into words
     for i in range(len(words)):
-        print("The Word:",words[i]," is a:",GoodOrBad(words[i]))
+        print("The Word:",words[i]," is a:",GoodOrBad(words[i].strip()))
         
 
 
